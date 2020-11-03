@@ -17,14 +17,14 @@ namespace CoreConsoleApp.DictionariesAndHashMap
                 string s1 = Console.ReadLine();
 
                 string s2 = Console.ReadLine();
-                string result = twoStrings(s1, s2);
+                string result = TwoStringsF(s1, s2);
 
                 Console.WriteLine(result);
             }
 
         }
 
-        private string twoStrings(string s1, string s2)
+        private string TwoStringsF(string s1, string s2)
         {
             Dictionary<char, int> charCount = new Dictionary<char, int>();
             int counter = 0;

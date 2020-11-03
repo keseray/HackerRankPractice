@@ -16,12 +16,12 @@ namespace CoreConsoleApp.Arrays
             int d = Convert.ToInt32(nd[1]);
 
             int[] a = Array.ConvertAll(Console.ReadLine().Split(' '), aTemp => Convert.ToInt32(aTemp));
-            int[] result = rotLeft(a, d);
+            int[] result = RotLeft(a, d);
 
             Console.WriteLine(string.Join(" ", result));
         }
 
-        private int[] rotLeft(int[] a, int d)
+        private int[] RotLeft(int[] a, int d)
         {
             int[] a1 = new int[d];
             int[] a2 = new int[a.Length - d];

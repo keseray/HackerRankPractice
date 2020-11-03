@@ -19,10 +19,10 @@ namespace CoreConsoleApp.DictionariesAndHashMap
 
             string[] note = Console.ReadLine().Split(' ');
 
-            checkMagazine(magazine, note);
+            CheckMagazine(magazine, note);
         }
 
-        private void checkMagazine(string[] magazine, string[] note)
+        private void CheckMagazine(string[] magazine, string[] note)
         {
             Hashtable ht = new Hashtable();
             bool isValid = true;

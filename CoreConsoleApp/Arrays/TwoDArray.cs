@@ -16,12 +16,12 @@ namespace CoreConsoleApp.Arrays
                 arr[i] = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
             }
 
-            int result = hourglassSum(arr);
+            int result = HourglassSum(arr);
 
             Console.WriteLine(result);
         }
 
-        private int hourglassSum(int[][] arr)
+        private int HourglassSum(int[][] arr)
         {
             List<int> sumList = new List<int>();
             for (int i = 0; i <= 3; i++)
